@@ -8,9 +8,14 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  color: var(--primary-font-color);
 }
 a {
   text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
 /* Header */
 
@@ -21,7 +26,7 @@ a {
 
 .logo,
 .logo-header {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -38,19 +43,28 @@ a {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--primary-font-color);
 }
 
 .header-link {
   color: var(--primary-font-color);
 }
 
-.contact-item {
+.header-link:focus,
+.header-link:hover {
+  color: var(--accent-color);
+}
+
+.contact-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--seondary-font-color);
+}
+
+.contact-link:focus,
+.contact-link:hover {
+  color: var(--accent-color);
 }
 
 /* Main */
@@ -67,15 +81,17 @@ a {
   color: #ffffff;
 }
 
-.button-title {
+.button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+  color: #ffffff;
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
+  cursor: pointer;
 }
 /* Advantage */
 .hiden-title {
@@ -87,11 +103,9 @@ a {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  color: var(--primary-font-color);
 }
 
 .advantage-description {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -105,7 +119,6 @@ a {
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
-  color: var(--primary-font-color);
 }
 
 /* Team */
@@ -115,7 +128,6 @@ a {
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
-  color: var(--primary-font-color);
 }
 
 .team-name {
@@ -123,11 +135,9 @@ a {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--primary-font-color);
 }
 
 .team-position {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -144,7 +154,6 @@ a {
 }
 
 .address-link {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -152,9 +161,53 @@ a {
 }
 
 .footer-link {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.address-link:hover,
+.footer-link:hover {
+  color: var(--accent-color);
+}
+
+.address-link:focus,
+.footer-link:focus {
+  color: var(--accent-color);
+}
+
+/* PORTFOLIO */
+
+/* Filter */
+
+.portfolio-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--primary-font-color);
+  background-color: #f5f4fa;
+  border: none;
+  cursor: pointer;
+}
+
+.portfolio-button:focus,
+.portfolio-button:hover {
+  background-color: var(--accent-color);
+}
+
+.project-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.project-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--seondary-font-color);
 }

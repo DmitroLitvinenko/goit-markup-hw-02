@@ -8,6 +8,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--primary-font-color);
+  background-color: var(--primary-white);
 }
 
 .link {
@@ -45,6 +46,10 @@ body {
   color: var(--accent-color);
 }
 
+.link.current {
+  color: var(--accent-color);
+}
+
 .contact-link {
   color: var(--primary-font-color);
 }
@@ -71,6 +76,7 @@ body {
   letter-spacing: 0.06em;
   color: var(--primary-white);
   background-color: var(--accent-color);
+  text-decoration: none;
 }
 
 /* --------------------------HERO---------------------------- */

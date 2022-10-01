@@ -25,7 +25,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .logo-header {
@@ -42,7 +42,11 @@ body {
 .header-link:hover,
 .header-link:focus,
 .contact-link:hover,
-.contact-link:focus {
+.contact-link:focus,
+.footer-link:hover,
+.footer-link:focus,
+.address-link:hover,
+.address-link:focus {
   color: var(--accent-color);
 }
 
@@ -67,7 +71,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--primary-white);
 }
 
 .btn {
@@ -110,7 +114,6 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--primary-font-color);
 }
 
 /* --------------------------WORKS/TEAM---------------------------- */
@@ -172,6 +175,13 @@ body {
   font-weight: 500;
   line-height: 1.62;
   letter-spacing: 0.03em;
+  background-color: #f5f4fa;
+  color: var(--secondary-font-color);
+}
+
+.btn-portfolio:hover,
+.btn-portfolio:focus {
+  background-color: var(--accent-color);
 }
 
 .project-title {
